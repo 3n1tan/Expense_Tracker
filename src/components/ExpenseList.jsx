@@ -1,6 +1,7 @@
 import React from 'react'
 
-const ExpenseList = ({expenses, onDeleteExpense}) => {
+const ExpenseList = ({expenses, onDelete}) => {
+  if (expenses.length === 0) return null;
   return (
     <table>
         <thead>
@@ -17,7 +18,7 @@ const ExpenseList = ({expenses, onDeleteExpense}) => {
             <td>{expense.amount}</td>
             <td>{expense.category}</td>
             <td>
-              <button onClick={()=> onDeleteExpense(expense.id)}>Delete</button>
+              <button onClick={()=> onDelete(expense.id)}>Delete</button>
             </td>
           </tr>)}
             
