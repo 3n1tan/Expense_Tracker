@@ -3,7 +3,7 @@ import ExpenseList from "./components/ExpenseList"
 import { useState } from "react";
 import ExpenseFilter from "./components/ExpenseFilter";
 import ExpenseForm from "./components/ExpenseForm";
-import categories from "./categories";
+
 
 
 function App() {
